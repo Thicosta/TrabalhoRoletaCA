@@ -89,7 +89,10 @@ public class Roleta {
             apostaFicha[i] = input1.nextInt();
                 
             while (apostaFicha[i] < 1 || apostaFicha[i] > 20 || apostaFicha[i] > fichas[i]) {
+                 
+                 if (apostaFicha[i] > fichas[i]);
                 
+                System.out.println(" o numero de fichas são insufientes")
                 System.out.println("Você possui " + fichas[i] + " fichas.");
                 System.out.println("Por favor informe uma valor de 1 a 20."); 
                 
