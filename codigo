@@ -108,14 +108,14 @@ public class Roleta {
         
             for (int i = 0; i < nJogadores; i++) {
             
-            System.out.println(jogadores[i] + ", por favor informe qual número deseja apostar ( MIN:1, MAX: 12)");
-            numeroAposta[i] = input1.nextInt() - 1;
+            System.out.println(jogadores[i] + ", por favor informe qual número deseja apostar ( MIN:0, MAX: 11)");
+            numeroAposta[i] = input1.nextInt();
                 
             while (numeroAposta[i] < 0 || numeroAposta[i] > 11) {
                
-                System.out.println("Por favor escolha um número entre 1 e 12."); 
+                System.out.println("Por favor escolha um número entre 0 e 11."); 
                
-                numeroAposta[i] = input1.nextInt() - 1;
+                numeroAposta[i] = input1.nextInt();
                     
                 }
             
@@ -124,7 +124,7 @@ public class Roleta {
             
             for (int i = 0; i < nJogadores; i++) {
                 
-            System.out.println(jogadores[i] + " apostou no número: " + (numeroAposta[i] + 1) + ".");
+            System.out.println(jogadores[i] + " apostou no número: " + numeroAposta[i] + ".");
            
    
         
