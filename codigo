@@ -142,7 +142,11 @@ public class Roleta {
         
        return gerador.nextInt(12);
        
-    
+
+if (numeroAposta[i] = roleta)
+int multiplica;
+multiplica = 2 * apostaFicha[i];
+system.out.println (" Você ganhou: " + multiplica );
        
 }
 }  
